@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* 盒子模型设定 */
+	box-sizing: border-box;
+}
+
+.header{
+	width: 375px;
+	height: 75px;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.headerTop{
+	width: 375px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+	background-color: #F2F2F2;
+}
+.logo{
+	width: 50px;
+	height: 44px;
+	background-image: url(../img/logo.png);
+	background-size: 25px auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.user{
+	width: 50px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	color: #808080;
+}
+.search{
+	flex: 1;
+	height: 33px;
+	border: 1px solid #e5e5e5;
+	display: flex;
+	background-color: white;
+	border-radius: 2px;
+}
+.search .icon{
+	width: 31px;
+	height: 31px;
+	text-align: center;
+	line-height: 33px;
+	font-size: 20px;
+	color:#B8B8B8;
+}
+.search input{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.header .headNav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex: 1;
+}
+.header .headNav a{
+	text-decoration: none;
+	font-size: 13.5px;
+	color: rgb(116,116,116);
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header .headNav a.active{
+	color: rgb(237,91,0);
+	border-bottom: 2px solid;
+	border-color: rgb(237,91,0);
+}
+.headNav .xhicon{
+	font-size: 10px;
+	text-align: center;
+	line-height: 21px;
+	color:#B8B8B8;
+	position: relative;
+	z-index: 100;
+	transition: all .3s;
+}
+.xhMenu{
+	width: 100vw;
+	height: 0vh;
+	background: rgb(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	overflow: hidden;
+	transition: height 0.3s;
+}
+#choose:checked~.xhMenu{
+	height: 100vh;
+}
+#choose:checked~.xhicon{
+	transform: rotate(180deg);
+}
+.xhMain{
+	position: absolute;
+	top: 44px;
+	left: 0;
+	width: 375px;
+	height: 130px;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	padding: 0 13px 0 13px;
+}
+.xhMenu .xhkTop{
+	height: 30px;
+	width: 375px;
+	padding-top: 13.02px;
+	font-size: 14.5px;
+	color: #525252;
+}
+.xhMain .xhList{
+	margin-top: 17px;
+	flex: 1;
+	flex-wrap: wrap;
+	display: flex;
+	
+}
+.xhMain .xhList a{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #E5E5E5;
+	color: rgb(116,116,116);
+	border-radius: 4px;
+	font-size: 12.5px;
+	color: #3C3C3C;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	margin: 0 9.5px 10px 0;
+}
+.xhMain .xhList a:nth-child(4){
+	margin: 0 0 10px 0;
+}
+.xhMain .xhList a.active{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-color: rgb(237,91,0);
+	color: rgb(237,91,0);
+	background-color: #FDE0D5;
+}

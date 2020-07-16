@@ -1,0 +1,23 @@
+{
+  "id": "1945692",
+  "name": "mi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12659691",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "1487403",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    }
+  ]
+}
